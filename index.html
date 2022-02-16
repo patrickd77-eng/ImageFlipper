@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Flipper</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Rotator</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input
+          type="file"
+          id="toflip"
+          name="toflip"
+          accept="image/*"
+          onchange="loadFile(event)"
+        />
+      </form>
+    </div>
+    <div class="img-thumbnail mt-5">
+      <img width="200" height="200" id="output" />
+      <button id="rotate">Rotate 90deg</button>
+    </div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
